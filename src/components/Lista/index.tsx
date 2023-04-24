@@ -1,4 +1,5 @@
 import React from 'react';
+import style from './Lista.module.scss';
 
 function Lista() {
 
@@ -8,18 +9,24 @@ function Lista() {
     }, {
         tarefa: 'Javascript',
         tempo: '01:00:00'
+    }, {
+        tarefa: 'Typescript',
+        tempo: '03:00:00'
     }]
 
 
     return (
-        <div>
-            {tarefa.map((item, index) => (
-                <div>
-                    <h3> {item.tarefa} </h3>
-                    <p> {item.tempo}</p>
-                </div>
-            ))}
-        </div>
+        <aside className={style.listaTarefas}>
+            <h2><strong> Estudos do Dia </strong>  </h2>
+            <ul>
+                {tarefa.map((item, index) => (
+                    <li key={index} className={style.item}>
+                        <h3> {item.tarefa} </h3>
+                        <span> {item.tempo} </span>
+                    </li>
+                ))}
+            </ul>
+        </aside>
     )
 }
 
