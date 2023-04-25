@@ -1,4 +1,4 @@
-import { ITarefa } from '../../../types/tarefa';
+import { ITarefa } from '../../types/tarefa';
 import style from '../Lista.module.scss';
 
 export default function Item({tarefa, tempo, selecionado, completado, id}: ITarefa) {

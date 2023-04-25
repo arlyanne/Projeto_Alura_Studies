@@ -3,7 +3,7 @@ import Formulario from '../components/Formulario';
 import Lista from '../components/Lista';
 import style from './App.module.scss';
 import Cronometro from '../components/Cronometro';
-import { ITarefa } from '../types/tarefa';
+import { ITarefa } from '../components/types/tarefa';
 
 function App() {
   const [tarefas, setTarefas] = useState<ITarefa[] | []>([]);

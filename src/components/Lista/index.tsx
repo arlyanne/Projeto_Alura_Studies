@@ -1,6 +1,6 @@
 import style from './Lista.module.scss';
 import Item from './Item';
-import { ITarefa } from '../../types/tarefa';
+import { ITarefa } from '../types/tarefa';
 
 
 
